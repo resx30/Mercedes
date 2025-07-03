@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mercedes Benz Selector</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="car-card">
+    <div class="car-image">
+      <img id="car-img" src="img/Rojo_Jacinto_Metalizado.png" alt="Mercedes Rojo">
+    </div>
+    <div class="car-info">
+      <h2>Mercedes Benz e300 2022</h2>
+      <p>
+        Kilometraje: 5,000 km<br>
+        Transmisión: Automática<br>
+        Combustible: Gasolina<br>
+        Calificación: ★★★★★
+      </p>
+      <div class="price">$184,450 USD</div>
+    </div>
+    <div class="color-buttons">
+      <div class="circle red" onclick="changeCar(0)"></div>
+      <div class="circle gray" onclick="changeCar(1)"></div>
+      <div class="circle black" onclick="changeCar(2)"></div>
+    </div>
+  </div>
+ 
+  <button class="video-btn" onclick="openVideo()">Ver Video</button>
+
+  <div id="video-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeVideo()">&times;</span>
+        <iframe id="video-frame" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
